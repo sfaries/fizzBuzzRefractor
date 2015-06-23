@@ -2,18 +2,40 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title> fizzBuzz </title>
-		<script src="fizzBuzz.js"> </script>
-		<script src="jquery2-1-1.js"> </script>
+		<title> fizzBuzzRefractor </title>
 
 	</head>
 	<body>
-	<p> Input a Number </p>
-	<form>
-		<input id = "input" type = "text">
-	</form>
 
 
+	<script>
+
+	var integer = prompt(+'');
+
+		function Refractor(integer){
+		for (var i = 1; i < integer; i++){
+			document.write("<br />");
+
+			if ((i % 3 == 0) && (i % 5 == 0)){
+				document.write('fizzbuzz');
+			}
+			else if ((i % 3 == 0) && (i % 5 != 0)){
+				document.write('fizz');
+			}
+			else if ((i % 5 == 0) && (i % 3 !=0)){
+				document.write('buzz');
+			}
+			else {
+				document.write(i);
+			}
+		}
+	};
+Refractor(integer);
+
+	</script>
+
+	<script src="jquery2-1-1.js"> </script>
+	<script src="fizzBuzzRefractor.js"> </script>
 
 	</body>
 </html>
